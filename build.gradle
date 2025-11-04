@@ -6,7 +6,7 @@ buildscript {
 	}
 	dependencies {
 		classpath 'com.android.tools.build:gradle:8.13.0'
-		classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.24"
+		classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:2.2.0'
 		def rnEnabled = gradle.ext.has('enableRN') ? gradle.ext.enableRN : false
 		if (rnEnabled) {
 			def rnPluginJar = file("$rootDir/node_modules/@react-native/gradle-plugin/build/libs/react-native-gradle-plugin.jar")
